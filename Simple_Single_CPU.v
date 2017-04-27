@@ -16,8 +16,8 @@ module Simple_Single_CPU(
 //I/O port
 input         clk_i;
 input         rst_i;
-wire reg_write,alusrc_out,regdst_out,branch_out,zero,branch_select;
-wire [32-1:0] pc_data_in,pc_data_out,pc_adder1,pc_adder2,instr_out,rs_out,rt_out,sign_extend_out,alu_in,alu_out,sl2_out;
+wire reg_write,alusrc_out,regdst_out,branch_out,zero,branch_select,shamt_select;
+wire [32-1:0] pc_data_in,pc_data_out,pc_adder1,pc_adder2,instr_out,rs_out,rt_out,sign_extend_out,alu_in,alu_out,sl2_out,src1_select_in;
 wire [5-1:0] rd_select_out;
 wire [3-1:0] alu_op_out;
 wire [4-1:0] alu_ctr_out;
@@ -74,9 +74,17 @@ Decoder Decoder(
 ALU_Ctrl AC(
         .funct_i(instr_out[5:0]),   
         .ALUOp_i(alu_op_out),   
-        .ALUCtrl_o(alu_ctr_out) 
+        .ALUCtrl_o(alu_ctr_out),
+		  .shamt_select(shamt_select)
         );
-	
+
+MUX_2to1 #(.size(32)) Mux_shamt(
+        .data0_i(rs_out),
+        .data1_i(sign_extend_out),
+        .select_i(shamt_select),
+        .data_o(src1_select_in)
+        );	
+			
 Sign_Extend SE(
         .data_i(instr_out[15:0]),
         .data_o(sign_extend_out)
@@ -90,7 +98,7 @@ MUX_2to1 #(.size(32)) Mux_ALUSrc(
         );	
 		
 ALU ALU(
-        .src1_i(rs_out),
+        .src1_i(src1_select_in),
 	    .src2_i(alu_in),
 	    .ctrl_i(alu_ctr_out),
 	    .result_o(alu_out),

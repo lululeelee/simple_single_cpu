@@ -12,7 +12,8 @@
 module ALU_Ctrl(
           funct_i,
           ALUOp_i,
-          ALUCtrl_o
+          ALUCtrl_o,
+			 shamt_select
           );
           
 //I/O ports 
@@ -20,10 +21,10 @@ input      [6-1:0] funct_i;
 input      [3-1:0] ALUOp_i;
 
 output     [4-1:0] ALUCtrl_o;    
-     
+output shamt_select;     
 //Internal Signals
 reg        [4-1:0] ALUCtrl_o;
-
+reg shamt_select;
 //Parameter
 always@(funct_i,ALUOp_i)begin
 /*case(funct_i)
@@ -67,6 +68,10 @@ case(ALUOp_i)
 	6:ALUCtrl_o<=4'b1011;	//lui
 endcase	
 //Select exact operation
+if(ALUOp_i==0&&funct_i==3_)
+	shamt_select<=1;
+else
+	shamt_select<=0;
 end
 endmodule     
 

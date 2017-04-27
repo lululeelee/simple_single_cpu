@@ -23,6 +23,7 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALU_Ctrl_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALU_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Adder_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Instr_Memory_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MUX_2to1_isim_beh.exe"/>
@@ -65,7 +66,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493297013" xil_pn:in_ck="-7691653735209205592" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1493297013">
+    <transform xil_pn:end_ts="1493306729" xil_pn:in_ck="-7691653735209205592" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1493306729">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -81,11 +82,11 @@
       <outfile xil_pn:name="Simple_Single_CPU.v"/>
       <outfile xil_pn:name="Test_Bench.v"/>
     </transform>
-    <transform xil_pn:end_ts="1493295924" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7994251461958826743" xil_pn:start_ts="1493295924">
+    <transform xil_pn:end_ts="1493306249" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7994251461958826743" xil_pn:start_ts="1493306249">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493295924" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2199307524257304683" xil_pn:start_ts="1493295924">
+    <transform xil_pn:end_ts="1493306249" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2199307524257304683" xil_pn:start_ts="1493306249">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -93,7 +94,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493297013" xil_pn:in_ck="-7691653735209205592" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493297013">
+    <transform xil_pn:end_ts="1493306729" xil_pn:in_ck="-7691653735209205592" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493306729">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -109,7 +110,7 @@
       <outfile xil_pn:name="Simple_Single_CPU.v"/>
       <outfile xil_pn:name="Test_Bench.v"/>
     </transform>
-    <transform xil_pn:end_ts="1493297025" xil_pn:in_ck="-7691653735209205592" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2188706686049508541" xil_pn:start_ts="1493297013">
+    <transform xil_pn:end_ts="1493306742" xil_pn:in_ck="-7691653735209205592" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2188706686049508541" xil_pn:start_ts="1493306729">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TestBench_beh.prj"/>
@@ -119,7 +120,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1493297026" xil_pn:in_ck="4331111825369056260" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5972704704313354080" xil_pn:start_ts="1493297025">
+    <transform xil_pn:end_ts="1493306743" xil_pn:in_ck="6624392071050858805" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5972704704313354080" xil_pn:start_ts="1493306742">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TestBench_isim_beh.wdb"/>
