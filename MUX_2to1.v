@@ -2,7 +2,7 @@
 //--------------------------------------------------------------------------------
 //Version:     1
 //--------------------------------------------------------------------------------
-//Writer:      
+//Writer:      0416111 0540112
 //----------------------------------------------
 //Date:        
 //----------------------------------------------
@@ -26,13 +26,13 @@ output  [size-1:0] data_o;
 
 //Internal Signals
 reg     [size-1:0] data_o;
+//Main function
 always @(select_i,data0_i,data1_i)begin
 	if(select_i==0)
 		data_o<=data0_i;
 	else
 		data_o<=data1_i;
 end
-//Main function
 
 endmodule      
           

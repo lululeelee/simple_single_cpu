@@ -12,7 +12,7 @@ Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Instr_Memory.v" into librar
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Decoder.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/ALU_Ctrl.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/ALU.v" into library work
-WARNING:HDLCompiler:936 - "D:/verilog/Simple_Single_CPU/ALU.v" Line 32: Keyword 'unsigned' is not allowed here in this mode of verilog
+WARNING:HDLCompiler:936 - "D:/verilog/Simple_Single_CPU/ALU.v" Line 31: Keyword 'unsigned' is not allowed here in this mode of verilog
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Adder.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Simple_Single_CPU.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Test_Bench.v" into library work
@@ -34,8 +34,8 @@ Compiling module Simple_Single_CPU
 Compiling module TestBench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 7 sub-compilation(s) to finish...
+Waiting for 5 sub-compilation(s) to finish...
 Compiled 14 Verilog Units
 Built simulation executable D:/verilog/Simple_Single_CPU/TestBench_isim_beh.exe
-Fuse Memory Usage: 28452 KB
-Fuse CPU Usage: 2202 ms
+Fuse Memory Usage: 28384 KB
+Fuse CPU Usage: 2030 ms

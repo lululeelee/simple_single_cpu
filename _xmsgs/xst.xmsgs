@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\verilog\Simple_Single_CPU\Sign_Extend.v" Line 26: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">4</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="936" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 31: Keyword &apos;<arg fmt="%s" index="1">unsigned</arg>&apos; is not allowed here in this mode of verilog
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="817" delta="old" >"D:\verilog\Simple_Single_CPU\Test_Bench.v" Line 39: System task <arg fmt="%s" index="1">fclose</arg> ignored for synthesis
@@ -18,12 +18,6 @@
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\Instr_Memory.v" Line 32: Signal &lt;<arg fmt="%s" index="1">Instr_Mem</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\MUX_2to1.v" Line 31: Signal &lt;<arg fmt="%s" index="1">data0_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\MUX_2to1.v" Line 33: Signal &lt;<arg fmt="%s" index="1">data1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="462" delta="old" >"D:\verilog\Simple_Single_CPU\Reg_File.v" Line 46: if-condition does not match any sensitivity list edge
@@ -44,52 +38,7 @@
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\verilog\Simple_Single_CPU\Reg_File.v" Line 11: Empty module &lt;<arg fmt="%s" index="1">Reg_File</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 70: Assignment to <arg fmt="%s" index="1">regdst_out</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\MUX_2to1.v" Line 31: Signal &lt;<arg fmt="%s" index="1">data0_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\MUX_2to1.v" Line 33: Signal &lt;<arg fmt="%s" index="1">data1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 41: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 42: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 43: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 44: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 45: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 46: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 47: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 48: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 49: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 50: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 51: Signal &lt;<arg fmt="%s" index="1">src1_i</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 97: Assignment to <arg fmt="%s" index="1">zero</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 19: Net &lt;<arg fmt="%s" index="1">rd_select</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 43: Signal &lt;<arg fmt="%s" index="1">tmp_slt</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="817" delta="old" >"D:\verilog\Simple_Single_CPU\Test_Bench.v" Line 46: System task <arg fmt="%s" index="1">fdisplay</arg> ignored for synthesis

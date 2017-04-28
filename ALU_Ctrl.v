@@ -2,7 +2,7 @@
 //--------------------------------------------------------------------------------
 //Version:     1
 //--------------------------------------------------------------------------------
-//Writer:      
+//Writer:      0416111 0540112
 //----------------------------------------------
 //Date:        
 //----------------------------------------------
@@ -25,28 +25,9 @@ output shamt_select;
 //Internal Signals
 reg        [4-1:0] ALUCtrl_o;
 reg shamt_select;
-//Parameter
+
+//Main function
 always@(funct_i,ALUOp_i)begin
-/*case(funct_i)
-	0:begin
-		case(ALUOp_i)
-			//0:
-			1:ALUCtrl_o<=4'b0111;
-			2:ALUCtrl_o<=4'b1010;
-			3:ALUCtrl_o<=4'b0011;
-			4:ALUCtrl_o<=4'b0011;
-			5:ALUCtrl_o<=4'b0001;
-			6:ALUCtrl_o<=4'b1011;
-		endcase
-	end
-	3:ALUCtrl_o<=4'b1000;
-	7:ALUCtrl_o<=4'b1001;
-	32:ALUCtrl_o<=4'b0010;
-	34:ALUCtrl_o<=4'b0110;
-	36:ALUCtrl_o<=4'b0000;
-	37:ALUCtrl_o<=4'b0001;
-	42:ALUCtrl_o<=4'b0100;
-endcase*/
 case(ALUOp_i)
 	0:begin
 		case(funct_i)

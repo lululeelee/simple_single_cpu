@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.47 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.48 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Reading design: TestBench.prj
 
@@ -107,7 +107,6 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Analyzing Verilog file "D:\verilog\Simple_Single_CPU\Sign_Extend.v" into library work
 Parsing module <Sign_Extend>.
-WARNING:HDLCompiler:568 - "D:\verilog\Simple_Single_CPU\Sign_Extend.v" Line 26: Constant value is truncated to fit in <4> bits.
 Analyzing Verilog file "D:\verilog\Simple_Single_CPU\Shift_Left_Two_32.v" into library work
 Parsing module <Shift_Left_Two_32>.
 Analyzing Verilog file "D:\verilog\Simple_Single_CPU\Reg_File.v" into library work
@@ -124,6 +123,7 @@ Analyzing Verilog file "D:\verilog\Simple_Single_CPU\ALU_Ctrl.v" into library wo
 Parsing module <ALU_Ctrl>.
 Analyzing Verilog file "D:\verilog\Simple_Single_CPU\ALU.v" into library work
 Parsing module <ALU>.
+WARNING:HDLCompiler:936 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 31: Keyword 'unsigned' is not allowed here in this mode of verilog
 Analyzing Verilog file "D:\verilog\Simple_Single_CPU\Adder.v" into library work
 Parsing module <Adder>.
 Analyzing Verilog file "D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" into library work
@@ -146,13 +146,11 @@ Elaborating module <ProgramCounter>.
 Elaborating module <Adder>.
 
 Elaborating module <Instr_Memory>.
-Reading initialization file \"CO_P2_test_data1.txt\".
+Reading initialization file \"CO_P2_test_data3.txt\".
 WARNING:HDLCompiler:1670 - "D:\verilog\Simple_Single_CPU\Instr_Memory.v" Line 39: Signal <Instr_Mem> in initial block is partially initialized.
 WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\Instr_Memory.v" Line 32: Signal <Instr_Mem> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <MUX_2to1(size=5)>.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\MUX_2to1.v" Line 31: Signal <data0_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\MUX_2to1.v" Line 33: Signal <data1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <Reg_File>.
 WARNING:HDLCompiler:462 - "D:\verilog\Simple_Single_CPU\Reg_File.v" Line 46: if-condition does not match any sensitivity list edge
@@ -165,38 +163,23 @@ Module Reg_File remains a blackbox, due to errors in its contents
 WARNING:HDLCompiler:1499 - "D:\verilog\Simple_Single_CPU\Reg_File.v" Line 11: Empty module <Reg_File> remains a black box.
 
 Elaborating module <Decoder>.
-WARNING:HDLCompiler:1127 - "D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 70: Assignment to regdst_out ignored, since the identifier is never used
 
 Elaborating module <ALU_Ctrl>.
 
+Elaborating module <MUX_2to1(size=32)>.
+
 Elaborating module <Sign_Extend>.
 
-Elaborating module <MUX_2to1(size=32)>.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\MUX_2to1.v" Line 31: Signal <data0_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\MUX_2to1.v" Line 33: Signal <data1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-
 Elaborating module <ALU>.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 41: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 42: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 43: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 44: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 45: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 46: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 47: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 48: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 49: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 50: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 51: Signal <src1_i> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:1127 - "D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 97: Assignment to zero ignored, since the identifier is never used
+WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 43: Signal <tmp_slt> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <Shift_Left_Two_32>.
-WARNING:HDLCompiler:634 - "D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 19: Net <rd_select> does not have a driver.
 WARNING:HDLCompiler:817 - "D:\verilog\Simple_Single_CPU\Test_Bench.v" Line 46: System task fdisplay ignored for synthesis
 --> 
 
 Total memory usage is 321932 kilobytes
 
 Number of errors   :    1 (   0 filtered)
-Number of warnings :   29 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

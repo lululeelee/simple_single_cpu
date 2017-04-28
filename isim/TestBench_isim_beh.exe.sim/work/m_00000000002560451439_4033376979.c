@@ -62,7 +62,7 @@ LAB2:    xsi_set_current_line(27, ng0);
 LAB1:    return;
 }
 
-static void Always_28_1(char *t0)
+static void Always_29_1(char *t0)
 {
     char t7[8];
     char *t1;
@@ -79,7 +79,7 @@ LAB0:    t1 = (t0 + 2936U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(28, ng0);
+LAB2:    xsi_set_current_line(29, ng0);
     t2 = (t0 + 3272);
     *((int *)t2) = 1;
     t3 = (t0 + 2968);
@@ -87,9 +87,9 @@ LAB2:    xsi_set_current_line(28, ng0);
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(28, ng0);
+LAB4:    xsi_set_current_line(29, ng0);
 
-LAB5:    xsi_set_current_line(29, ng0);
+LAB5:    xsi_set_current_line(30, ng0);
     t4 = (t0 + 1048U);
     t5 = *((char **)t4);
     t4 = (t0 + 1208U);
@@ -105,7 +105,7 @@ LAB5:    xsi_set_current_line(29, ng0);
 
 extern void work_m_00000000002560451439_4033376979_init()
 {
-	static char *pe[] = {(void *)Cont_27_0,(void *)Always_28_1};
+	static char *pe[] = {(void *)Cont_27_0,(void *)Always_29_1};
 	xsi_register_didat("work_m_00000000002560451439_4033376979", "isim/TestBench_isim_beh.exe.sim/work/m_00000000002560451439_4033376979.didat");
 	xsi_register_executes(pe);
 }
