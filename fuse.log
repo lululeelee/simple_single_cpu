@@ -7,21 +7,24 @@ Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Sign_Extend.v" into library
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Shift_Left_Two_32.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Reg_File.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/ProgramCounter.v" into library work
+Analyzing Verilog file "D:/verilog/Simple_Single_CPU/MUX_4to1.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/MUX_2to1.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Instr_Memory.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Decoder.v" into library work
+Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Data_Memory.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/ALU_Ctrl.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/ALU.v" into library work
 WARNING:HDLCompiler:936 - "D:/verilog/Simple_Single_CPU/ALU.v" Line 31: Keyword 'unsigned' is not allowed here in this mode of verilog
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Adder.v" into library work
 Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Simple_Single_CPU.v" into library work
-Analyzing Verilog file "D:/verilog/Simple_Single_CPU/Test_Bench.v" into library work
+Analyzing Verilog file "D:/verilog/Simple_Single_CPU/testbench.v" into library work
 Analyzing Verilog file "D:/program/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling module ProgramCounter
 Compiling module Adder
 Compiling module Instr_Memory
+Compiling module Shift_Left_Two_32
 Compiling module MUX_2to1(size=5)
 Compiling module Reg_File
 Compiling module Decoder
@@ -29,13 +32,15 @@ Compiling module ALU_Ctrl
 Compiling module MUX_2to1(size=32)
 Compiling module Sign_Extend
 Compiling module ALU
-Compiling module Shift_Left_Two_32
+Compiling module Data_Memory
+Compiling module MUX_4to1(size=1)
+Compiling module MUX_4to1(size=32)
 Compiling module Simple_Single_CPU
 Compiling module TestBench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 5 sub-compilation(s) to finish...
-Compiled 14 Verilog Units
+Compiled 17 Verilog Units
 Built simulation executable D:/verilog/Simple_Single_CPU/TestBench_isim_beh.exe
-Fuse Memory Usage: 28384 KB
-Fuse CPU Usage: 2030 ms
+Fuse Memory Usage: 29332 KB
+Fuse CPU Usage: 2546 ms

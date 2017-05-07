@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/verilog/Simple_Single_CPU/Simple_Single_CPU.xst" -ofn "D:/verilog/Simple_Single_CPU/Simple_Single_CPU.syr" 

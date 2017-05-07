@@ -27,7 +27,7 @@ static int ng2[] = {0, 0};
 static int ng3[] = {32, 0};
 static unsigned int ng4[] = {0U, 0U};
 static int ng5[] = {1, 0};
-static const char *ng6 = "CO_P2_test_data3.txt";
+static const char *ng6 = "CO_P3_test_data1.txt";
 
 
 

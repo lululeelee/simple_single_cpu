@@ -13,7 +13,8 @@ module ALU_Ctrl(
           funct_i,
           ALUOp_i,
           ALUCtrl_o,
-			 shamt_select
+			 shamt_select,
+			 mux_jump_select
           );
           
 //I/O ports 
@@ -21,10 +22,10 @@ input      [6-1:0] funct_i;
 input      [3-1:0] ALUOp_i;
 
 output     [4-1:0] ALUCtrl_o;    
-output shamt_select;     
+output shamt_select,mux_jump_select;     
 //Internal Signals
 reg        [4-1:0] ALUCtrl_o;
-reg shamt_select;
+reg shamt_select,mux_jump_select;
 
 //Main function
 always@(funct_i,ALUOp_i)begin
@@ -33,6 +34,7 @@ case(ALUOp_i)
 		case(funct_i)
 			3:ALUCtrl_o<=4'b1000;
 			7:ALUCtrl_o<=4'b1001;
+			24:ALUCtrl_o<=4'b0101;	//mul
 			32:ALUCtrl_o<=4'b0010;	//add
 			34:ALUCtrl_o<=4'b0110;	//sub
 			36:ALUCtrl_o<=4'b0000;	//and
@@ -49,10 +51,25 @@ case(ALUOp_i)
 	6:ALUCtrl_o<=4'b1011;	//lui
 endcase	
 //Select exact operation
-if(ALUOp_i==0&&funct_i==3_)
-	shamt_select<=1;
-else
+
+if(ALUOp_i==0)begin
+	if(funct_i==3)begin
+		shamt_select<=1;
+		mux_jump_select<=0;
+	end
+	else if(funct_i==8)begin
+		mux_jump_select<=1;
+		shamt_select<=0;
+	end
+	else begin
+		shamt_select<=0;
+		mux_jump_select<=0;
+	end
+end
+else begin
 	shamt_select<=0;
+	mux_jump_select<=0;
+end
 end
 endmodule     
 

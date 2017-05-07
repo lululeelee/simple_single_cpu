@@ -42,6 +42,7 @@ case(ctrl_i)
 	2:result_o<=src1_i+src2_i;				//add
 	3:result_o<=src1_i<tmp_slt?1:0;		//slti
 	4:result_o<=src1_i<src2_i?1:0;		//slt
+	5:result_o<=src1_i*src2_i;				//mul
 	6:result_o<=src1_i-src2_i;				//sub
 	7:result_o<=src1_i==src2_i?0:1;		//beq
 	8:result_o<=src2_i>>>src1_i[10:6];	//sra

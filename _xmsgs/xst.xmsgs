@@ -8,12 +8,6 @@
 <msg type="warning" file="HDLCompiler" num="936" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 31: Keyword &apos;<arg fmt="%s" index="1">unsigned</arg>&apos; is not allowed here in this mode of verilog
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="817" delta="old" >"D:\verilog\Simple_Single_CPU\Test_Bench.v" Line 39: System task <arg fmt="%s" index="1">fclose</arg> ignored for synthesis
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"D:\verilog\Simple_Single_CPU\Test_Bench.v" Line 32: Using initial value of <arg fmt="%s" index="1">RST</arg> since it is never assigned
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="1670" delta="old" >"D:\verilog\Simple_Single_CPU\Instr_Memory.v" Line 39: Signal &lt;<arg fmt="%s" index="1">Instr_Mem</arg>&gt; in initial block is partially initialized.
 </msg>
 
@@ -38,10 +32,124 @@
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\verilog\Simple_Single_CPU\Reg_File.v" Line 11: Empty module &lt;<arg fmt="%s" index="1">Reg_File</arg>&gt; remains a black box.
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 81: Assignment to <arg fmt="%s" index="1">jump_o</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 84: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">MemToReg_o</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\verilog\Simple_Single_CPU\ALU.v" Line 43: Signal &lt;<arg fmt="%s" index="1">tmp_slt</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="817" delta="old" >"D:\verilog\Simple_Single_CPU\Test_Bench.v" Line 46: System task <arg fmt="%s" index="1">fdisplay</arg> ignored for synthesis
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 48: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 49: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 50: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 51: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 52: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 53: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 54: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 55: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 56: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 57: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 58: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 59: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 60: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 61: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 62: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 63: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 64: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 65: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 66: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 67: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 68: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 69: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 70: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 71: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 72: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 73: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 74: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 75: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 76: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 77: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 78: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 79: Assignment to <arg fmt="%s" index="1">memory</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\verilog\Simple_Single_CPU\Data_Memory.v" Line 107: Signal &lt;<arg fmt="%s" index="1">Mem</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 159: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">select_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 168: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">select_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 169: Assignment to <arg fmt="%s" index="1">reg_write_source_out</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 19: Net &lt;<arg fmt="%s" index="1">jump_out</arg>&gt; does not have a driver.
 </msg>
 
 </messages>

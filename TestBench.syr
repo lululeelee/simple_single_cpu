@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.60 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.60 secs
  
 --> Reading design: TestBench.prj
 
@@ -150,6 +150,8 @@ Reading initialization file \"CO_P2_test_data3.txt\".
 WARNING:HDLCompiler:1670 - "D:\verilog\Simple_Single_CPU\Instr_Memory.v" Line 39: Signal <Instr_Mem> in initial block is partially initialized.
 WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\Instr_Memory.v" Line 32: Signal <Instr_Mem> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
+Elaborating module <Shift_Left_Two_32>.
+
 Elaborating module <MUX_2to1(size=5)>.
 
 Elaborating module <Reg_File>.
@@ -163,6 +165,9 @@ Module Reg_File remains a blackbox, due to errors in its contents
 WARNING:HDLCompiler:1499 - "D:\verilog\Simple_Single_CPU\Reg_File.v" Line 11: Empty module <Reg_File> remains a black box.
 
 Elaborating module <Decoder>.
+WARNING:HDLCompiler:1127 - "D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 81: Assignment to jump_o ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 84: Size mismatch in connection of port <MemToReg_o>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 84: Assignment to memroreg_out ignored, since the identifier is never used
 
 Elaborating module <ALU_Ctrl>.
 
@@ -172,14 +177,15 @@ Elaborating module <Sign_Extend>.
 
 Elaborating module <ALU>.
 WARNING:HDLCompiler:91 - "D:\verilog\Simple_Single_CPU\ALU.v" Line 43: Signal <tmp_slt> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-
-Elaborating module <Shift_Left_Two_32>.
+ERROR:HDLCompiler:1654 - "D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 121: Instantiating <Data_Memory> from unknown module <Data_Memory>
+Module Simple_Single_CPU remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "D:\verilog\Simple_Single_CPU\Simple_Single_CPU.v" Line 11: Empty module <Simple_Single_CPU> remains a black box.
 WARNING:HDLCompiler:817 - "D:\verilog\Simple_Single_CPU\Test_Bench.v" Line 46: System task fdisplay ignored for synthesis
 --> 
 
-Total memory usage is 321932 kilobytes
+Total memory usage is 321864 kilobytes
 
-Number of errors   :    1 (   0 filtered)
-Number of warnings :   12 (   0 filtered)
+Number of errors   :    2 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
