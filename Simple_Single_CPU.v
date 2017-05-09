@@ -24,7 +24,7 @@ wire [3-1:0] alu_op_out;
 wire [4-1:0] alu_ctr_out;
 wire not_zero_out,not_sign_out,nor_zero_sign_out;
 wire [1:0] memtoreg_out,branch_type_select_out;
-wire mux_jal_i,mux_j;
+wire mux_jal_i,mux_j,regwrite_c;
 //Internal Signles
 
 
@@ -67,7 +67,7 @@ MUX_2to1 #(.size(5)) Mux_Jal(
         .select_i(mux_jal_i),
         .data_o(mux_jal)
         );	  
-		
+and and1(regwrite_c,reg_write,mux_j);		
 Reg_File RF(
         .clk_i(clk_i),      
 	    .rst_i(rst_i) ,     
@@ -75,7 +75,7 @@ Reg_File RF(
         .RTaddr_i(instr_out[20:16]) ,  
         .RDaddr_i(mux_jal) ,  
         .RDdata_i(reg_write_source_out)  , 
-        .RegWrite_i (reg_write),
+        .RegWrite_i (regwrite_c),
         .RSdata_o(rs_out) ,  
         .RTdata_o(rt_out)   
         );
@@ -157,7 +157,7 @@ MUX_2to1 #(.size(32)) Mux_PC_Source(
         .data_o(mux_pc_source_out)
         );	
 
-and and1(branch_select,branch_out,branch_type_out);
+and and2(branch_select,branch_out,branch_type_out);
 not not_zero(not_zero_out,zero);
 not not_sign(not_sign_out,alu_out[31]);
 nor nor_zero_sign(nor_zero_sign_out,zero,alu_out[31]);
@@ -181,17 +181,17 @@ MUX_4to1 #(.size(32)) Reg_Write_Source(
                );
 					
 MUX_2to1 #(.size(32)) Mux_Jump(
-               .data0_i({pc_adder1[31:28],jump_address[27:0]}),
-               .data1_i(rs_out),
+               .data0_i(rs_out),			//{pc_adder1[31:28],jump_address[27:0]}
+               .data1_i(mux_jump_o),
                .select_i(mux_j),
-               .data_o(mux_jump_o)
+               .data_o(pc_data_in)					//mux_jump_o
                );
 
 MUX_2to1 #(.size(32)) Jump_Address_Source(
                .data0_i(mux_pc_source_out),
-               .data1_i(mux_jump_o),
+               .data1_i({pc_adder1[31:28],jump_address[27:0]}),					//mux_jump_o
                .select_i(jump_out),
-               .data_o(pc_data_in)
+               .data_o(mux_jump_o)												//pc_data_in
                );
 
 

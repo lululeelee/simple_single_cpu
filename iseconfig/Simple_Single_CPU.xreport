@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-05-08T10:40:30</DateModified>
+  <DateModified>2017-05-09T20:23:03</DateModified>
   <ModuleName>Simple_Single_CPU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/verilog/Simple_Single_CPU/iseconfig/Simple_Single_CPU.xreport</SavedFilePath>

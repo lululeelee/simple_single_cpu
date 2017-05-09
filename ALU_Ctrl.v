@@ -56,20 +56,20 @@ endcase
 if(ALUOp_i==0)begin
 	if(funct_i==3)begin
 		shamt_select<=1;
-		mux_jump_select<=0;
+		mux_jump_select<=1;
 	end
 	else if(funct_i==8)begin
-		mux_jump_select<=1;
+		mux_jump_select<=0;
 		shamt_select<=0;
 	end
 	else begin
 		shamt_select<=0;
-		mux_jump_select<=0;
+		mux_jump_select<=1;
 	end
 end
 else begin
 	shamt_select<=0;
-	mux_jump_select<=0;
+	mux_jump_select<=1;
 end
 end
 endmodule     

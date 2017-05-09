@@ -39,8 +39,8 @@ Compiling module Simple_Single_CPU
 Compiling module TestBench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 10 sub-compilation(s) to finish...
+Waiting for 5 sub-compilation(s) to finish...
 Compiled 17 Verilog Units
 Built simulation executable D:/verilog/Simple_Single_CPU/TestBench_isim_beh.exe
-Fuse Memory Usage: 29292 KB
-Fuse CPU Usage: 2265 ms
+Fuse Memory Usage: 29520 KB
+Fuse CPU Usage: 2156 ms
