@@ -64,6 +64,18 @@ case(instr_op_i)
 		MemWrite_o<=0;
 		MemToReg_o<=2'b00;
 	end
+	1:begin							//bltz
+		RegWrite_o<=0;	
+		ALU_op_o<=3'b100;			//slt:if rs<rt then alu_out=1 and zero=0;
+		ALUSrc_o<=0;
+		RegDst_o<=1;				//not interested.
+		Branch_o<=1;
+		Branch_Type_o<=2'b11;	//if rs<0 then zero=0 so that branch_type_oout=1 and then branch...
+		Jump_o<=0;
+		MemRead_o<=0;
+		MemWrite_o<=0;
+		MemToReg_o<=2'b00;		//not interested...
+	end
 	2:begin							//J
 		RegWrite_o<=0;	
 		ALU_op_o<=3'b000;
@@ -100,11 +112,23 @@ case(instr_op_i)
 		MemWrite_o<=0;
 		MemToReg_o<=2'b00;
 	end
-	5:begin							//BNE
+	5:begin							//BNE and bnez
 		RegWrite_o<=0;
 		ALU_op_o<=3'b010;
 		ALUSrc_o<=0;
 		RegDst_o<=0;
+		Branch_o<=1;
+		Branch_Type_o<=2'b00;
+		Jump_o<=0;
+		MemRead_o<=0;
+		MemWrite_o<=0;
+		MemToReg_o<=2'b00;
+	end
+	6:begin							//ble if rs<=rt then branch
+		RegWrite_o<=0;
+		ALU_op_o<=3'b111;
+		ALUSrc_o<=0;
+		RegDst_o<=0;				//not interested
 		Branch_o<=1;
 		Branch_Type_o<=2'b00;
 		Jump_o<=0;
@@ -148,7 +172,7 @@ case(instr_op_i)
 		MemWrite_o<=0;
 		MemToReg_o<=2'b00;
 	end
-	15:begin							//LUI
+	15:begin							//LUI and li?
 		RegWrite_o<=1;
 		ALU_op_o<=3'b110;
 		ALUSrc_o<=1;

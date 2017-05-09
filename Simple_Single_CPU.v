@@ -181,8 +181,8 @@ MUX_4to1 #(.size(32)) Reg_Write_Source(
                );
 					
 MUX_2to1 #(.size(32)) Mux_Jump(
-               .data0_i(rs_out),
-               .data1_i({pc_adder1[31:28],jump_address[27:0]}),
+               .data0_i({pc_adder1[31:28],jump_address[27:0]}),
+               .data1_i(rs_out),
                .select_i(mux_j),
                .data_o(mux_jump_o)
                );

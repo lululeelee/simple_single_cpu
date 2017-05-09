@@ -49,6 +49,7 @@ case(ALUOp_i)
 	4:ALUCtrl_o<=4'b0011;	//sltiu
 	5:ALUCtrl_o<=4'b0001;	//ori
 	6:ALUCtrl_o<=4'b1011;	//lui
+	7:ALUCtrl_o<=4'b1100;	//sgt  if rs>rt then result=1;
 endcase	
 //Select exact operation
 

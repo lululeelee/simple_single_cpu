@@ -49,6 +49,7 @@ case(ctrl_i)
 	9:result_o<=src2_i>>>src1_i;			//srav
 	10:result_o<=src1_i!=src2_i?0:1;		//bne
 	11:result_o<=src2_i<<<16;				//lui
+	12:result_o<=src1_i>src2_i?1:0;		//sgt
 endcase
 end
 endmodule
